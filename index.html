@@ -49,14 +49,17 @@
     </header>
 
     <section class="p-6 ">
-        <div class="space-y-4">
+        <div class="space-y-4 ">
+            <div class="flex flex-wrap justify-between items-center gap-4">
             <h3 class="text-[#002C5C] text-[20px] font-semibold">Available Jobs</h3>
-            <div class="flex gap-3.5">
+            <p class="text-sm text-slate-500 font-medium"><span id="available">8</span> Jobs</p>
+            </div>
+            <div class="flex gap-3.5 s">
                 <button onclick="showOnly('all-job')" class="btn btn-primary btn-soft
                 ">All</button>
-                <button onclick="showOnly('interview')" class="btn btn-primary btn-soft
+                <button onclick="showOnly('interview')"  class="btn btn-primary btn-soft
                 ">Interview</button>
-                <button onclick="showOnly('rejected')" class="btn btn-primary btn-soft
+                <button onclick="showOnly('rejected')"  class="btn btn-primary btn-soft
                 ">Rejected</button>
             </div>
         </div>
@@ -210,8 +213,8 @@
 
         <!-- Empty Section -->
 
-        <div id="empty-state" class=" hidden flex flex-col items-center justify-center gap-4 text-center py-20" >
-                <img src="/B13-A4-PH-Job-Tracker/jobs.png" alt="">
+        <div id="empty-state" class="hidden flex flex-col items-center justify-center gap-4 text-center py-20" >
+                <img src="/jobs.png" alt="">
                 <p class="font-syne text-lg font-bold text-navy">No Job Available</p>
                 <p class="text-sm text-slate-400">Check back soon for new job opportunities</p>
             

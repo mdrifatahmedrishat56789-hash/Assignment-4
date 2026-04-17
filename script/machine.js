@@ -24,6 +24,9 @@ const interviewState = document.getElementById('interview-state')
 const rejectedState = document.getElementById('rejected-state')
 const emptyState = document.getElementById('empty-state')
 
+    emptyState.classList.add("hidden")
+
+
 if(allState.children.length<1){
     emptyState.classList.remove("hidden")
 }
@@ -63,3 +66,24 @@ function updateState(){
     rejectedState.innerText = rejected.children.length;
 }
 updateState()
+
+
+function empty(id){
+    const all = document.getElementById('all-job')
+    const interview = document.getElementById('interview')
+    const rejected = document.getElementById('rejected')
+    const emptyState = document.getElementById('empty-state')
+
+    emptyState.classList.add("hidden")
+
+
+if(allState.children.length<1){
+    emptyState.classList.remove("hidden")
+}
+if(interviewState.children.length<1){
+    emptyState.classList.remove("hidden")
+}
+if(rejectedState.children.length<1){
+    emptyState.classList.remove("hidden")
+}
+}
