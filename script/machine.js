@@ -61,4 +61,9 @@ document.getElementById('all-job').addEventListener('click',function(event){
     }
 })
 
-
+function updateState(){
+    allState.innerText = all.children.length;
+    interviewState.innerText = interview.children.length;
+    rejectedState.innerText = rejected.children.length;
+}
+updateState()
